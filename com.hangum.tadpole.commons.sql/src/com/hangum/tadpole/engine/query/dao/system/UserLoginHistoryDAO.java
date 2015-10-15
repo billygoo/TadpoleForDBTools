@@ -13,8 +13,8 @@ public class UserLoginHistoryDAO {
 	int seq;
 	int user_seq;
 	String login_ip;
-	Timestamp connet_time;
-	Timestamp disconnect_time; 
+	String connet_time;
+	String disconnect_time; 
 	
 	public UserLoginHistoryDAO() {
 	}
@@ -64,28 +64,28 @@ public class UserLoginHistoryDAO {
 	/**
 	 * @return the connet_time
 	 */
-	public Timestamp getConnet_time() {
+	public String getConnet_time() {
 		return connet_time;
 	}
 
 	/**
 	 * @param connet_time the connet_time to set
 	 */
-	public void setConnet_time(Timestamp connet_time) {
+	public void setConnet_time(String connet_time) {
 		this.connet_time = connet_time;
 	}
 
 	/**
 	 * @return the disconnect_time
 	 */
-	public Timestamp getDisconnect_time() {
+	public String getDisconnect_time() {
 		return disconnect_time;
 	}
 
 	/**
 	 * @param disconnect_time the disconnect_time to set
 	 */
-	public void setDisconnect_time(Timestamp disconnect_time) {
+	public void setDisconnect_time(String disconnect_time) {
 		this.disconnect_time = disconnect_time;
 	}
 	
